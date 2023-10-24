@@ -1,0 +1,9 @@
+---
+- name: create file pb in nodes
+  hosts: webservers
+  become: true
+  tasks: 
+  - name: create file from file-module
+    file:
+      path: /home/ansadmin/demofilepb
+      state: touch  

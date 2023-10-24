@@ -1,0 +1,7 @@
+--- #write comments 
+- name: this playbook creates users
+  hosts: all
+  become: yes
+  tasks:
+  - name: creating a user devopsplaybook
+    user: name=devopsplaybook #this is user module commands
